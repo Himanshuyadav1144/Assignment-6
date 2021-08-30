@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height:5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #264222;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+body{
+    background: #e7600b;  /* fallback for old browsers */
+
+}
+#title{
+    text-align: center;
+    color:rgb(15, 14, 14);
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    text-decoration:underline;
+    
+}
+.parent{
+    width:700px;
+    margin:auto;
+    margin-top: 20px;
+}
+.type1{
+    width:70%;
+    margin:auto;
+    text-align: center;
+    
+}
+.type1  input{
+    background-color:rgba(161, 165, 187, 0.904);
+    width:70%;
+    height:35px;
+    border-radius: 15px;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    
+}
+.type1  input:focus{
+    border: none;
+}
+.type1 button{
+    background-color:rgb(16, 24, 19);
+    color:white;
+    border:none;
+    border-radius: 40%;
+    cursor:pointer;
+    padding: 6px;
+    font-family:'Candal',sans-serif;
+}
+.type2{
+    margin-top: 20px;
+}
+.type2 ul{
+    width:100%;
+    margin:auto;
+    list-style: none;
+}
+
+.container{
+    background-color: rgba(75, 49, 49, 0.212);
+    padding:10px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ .outer_div{
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    padding:5px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.list_item{
+    background-color:rgb(244, 241, 247);
+    height:50px;
+    width:500px;
+    font-size: 30px;
+    padding-bottom:10px;
+    white-space: nowrap;
+    overflow-y: hidden; 
+    overflow-x: scroll;
+    
+}
+.list_icon{
+    width:200px;
+    padding:5px;
+    padding-top:6px;
+    margin-left: 5px;
+}
+.list_icon button{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    text-decoration: none;
+    cursor :pointer;
+}
+.list_icon  i{
+    background-color:rgb(238, 75, 203);
+    font-size:25px;
+}
+@media screen and (max-width:700px) {
+    #title{ font-size: 2em;}
+    .parent{
+        width:350px;
+        margin-top: 5px;
+    }
+    .inner2{ margin-top: 5px; }
+    .container{ padding:5px; }
+}
